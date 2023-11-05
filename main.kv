@@ -1,0 +1,28 @@
+<GroceryListApp>:
+    orientation: 'vertical'
+    padding: 10
+    spacing: 10
+
+
+        
+
+    TextInput:
+        hint_text: "Enter missing grocery item"
+
+    Button:
+        background_color: 0.6, 0.8, 1, 1  
+        text: "Add Item"
+        on_release: root.add_item()
+
+    Button:
+        background_color: 0.6, 0.8, 1, 1 
+        text: "Missing Groceries"
+        on_release: root.show_grocery_list
+
+<GroceryListScreen>:
+    orientation: 'vertical'
+
+    Label:
+        id: grocery_display
+
+
